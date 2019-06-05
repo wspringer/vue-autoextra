@@ -1,0 +1,19 @@
+{
+  "name": "vue-autoextra",
+  "version": "0.1.0",
+  "description": "Autoextra for Vue",
+  "main": "lib/index.js",
+  "author": "Wilfred Springer",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "shx mkdir -p ./lib"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.4.1",
+    "shx": "^0.3.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
