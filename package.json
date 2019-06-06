@@ -9,16 +9,26 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prepare": "run-s build",
+    "prepublishOnly": "run-s build",
     "build": "run-p build:*",
     "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-autoextra.umd.js",
     "build:es": "rollup --config rollup.config.js --format es --file dist/vue-autoextra.esm.js",
-    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextra.min.js"
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextra.min.js",
+    "test": "jest"
   },
   "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "buble-jest": "^1.0.1",
+    "jest": "^24.8.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.14.2",
-    "rollup-plugin-buble": "^0.19.6"
+    "rollup-plugin-buble": "^0.19.6",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "buble-jest"
+    }
   },
   "dependencies": {
     "vue": "^2.6.10"
