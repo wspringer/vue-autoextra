@@ -711,7 +711,7 @@ buble-jest@^1.0.1:
     "@babel/plugin-transform-modules-commonjs" "^7.0.0-beta.42"
     cosmiconfig "^4.0.0"
 
-buble@^0.19.6:
+buble@^0.19.6, buble@^0.19.7:
   version "0.19.7"
   resolved "https://registry.yarnpkg.com/buble/-/buble-0.19.7.tgz#1dfd080ab688101aad5388d3304bc82601a244fd"
   integrity sha512-YLgWxX/l+NnfotydBlxqCMPR4FREE4ubuHphALz0FxQ7u2hp3BzxTKQ4nKpapOaRJfEm1gukC68KnT2OymRK0g==
