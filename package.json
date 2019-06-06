@@ -9,8 +9,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prepare": "npm-run-all build",
-    "build": "npm-run-all build:umd build:es build:unpkg",
+    "prepare": "run-s build",
+    "build": "run-p build:umd build:es build:unpkg",
     "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-autoextra.umd.js",
     "build:es": "rollup --config rollup.config.js --format es --file dist/vue-autoextra.esm.js",
     "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextra.min.js"
