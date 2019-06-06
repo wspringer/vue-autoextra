@@ -26,6 +26,13 @@
     "rollup-plugin-buble": "^0.19.6",
     "vue-template-compiler": "^2.6.10"
   },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "wspringer/vue-autoextra"
+  },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "buble-jest"
