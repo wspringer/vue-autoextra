@@ -23,7 +23,7 @@ describe('Autoextra', () => {
     })
   })
 
-  it('should include yetanother entry when editing the extra entry', done => {
+  it('should include yet another entry when editing the extra entry', done => {
     const wrapper = mount(Autoextra, {
       propsData: {
         collection: [{
