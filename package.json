@@ -32,7 +32,6 @@
     }
   },
   "dependencies": {
-    "lodash.isempty": "^4.4.0",
     "vue": "^2.6.10"
   }
 }
