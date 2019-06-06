@@ -1,3 +1,5 @@
+import isEmpty from 'lodash/isempty'
+
 export const Autoextra = {
   props: ['collection'],
   data () {
@@ -11,7 +13,7 @@ export const Autoextra = {
       const unregister = this.$watch(
         'placeholder',
         (updated) => {
-          if (!_.isEmpty(updated)) {
+          if (!isEmpty(updated)) {
             unregister()
             if (next) {
               next.push(this.placeholder)
