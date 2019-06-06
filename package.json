@@ -10,7 +10,7 @@
   "private": false,
   "scripts": {
     "prepare": "run-s build",
-    "build": "run-p build:umd build:es build:unpkg",
+    "build": "run-p build:*",
     "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-autoextra.umd.js",
     "build:es": "rollup --config rollup.config.js --format es --file dist/vue-autoextra.esm.js",
     "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-autoextra.min.js"
