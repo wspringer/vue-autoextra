@@ -1,6 +1,6 @@
 {
   "name": "vue-autoextra",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Autoextra for Vue",
   "main": "dist/vue-autoextra.umd.js",
   "module": "dist/vue-autoextra.esm.js",
