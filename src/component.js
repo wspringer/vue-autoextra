@@ -2,7 +2,7 @@ function isEmpty(obj) {
   return Object.keys(obj).length === 0
 }
 
-export const Autoextra = {
+export default {
   props: ['collection'],
   data () {
     return {
@@ -15,6 +15,7 @@ export const Autoextra = {
       const unregister = this.$watch(
         'placeholder',
         (updated) => {
+          console.info('Updating')
           if (!isEmpty(updated)) {
             unregister()
             if (next) {
