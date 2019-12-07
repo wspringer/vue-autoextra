@@ -1,0 +1,14 @@
+{
+  "plugins": ["lodash"],
+  "extends": [
+    "airbnb-base",
+    "plugin:lodash/recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "global-require": 0,
+    "no-restricted-syntax": 0,
+    "lodash/prefer-lodash-method": 0
+  }
+}
