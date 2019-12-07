@@ -3,7 +3,7 @@ import { mount, shallowMount } from '@vue/test-utils'
 
 
 describe('Autoextra', () => {
- 
+
   it('should include a slot for ever item in the collection, plus one extra', done => {
     const wrapper = mount(Autoextra, {
       propsData: {
@@ -18,11 +18,11 @@ describe('Autoextra', () => {
     wrapper.vm.$nextTick(() => {
       expect(wrapper.findAll('input').length).toEqual(2)
       expect(wrapper.findAll('input').at(0).element.value).toEqual('joe')
-      done()  
+      done()
     })
   })
 
-  xit('should include yet another entry when editing the extra entry', done => {
+  it('should include yet another entry when editing the extra entry', done => {
     const wrapper = mount(Autoextra, {
       propsData: {
         collection: []
@@ -35,7 +35,7 @@ describe('Autoextra', () => {
       const extraInput = wrapper.findAll('input').at(0)
       extraInput.setValue('bar')
       done()
-    })    
+    })
   })
 
 })
