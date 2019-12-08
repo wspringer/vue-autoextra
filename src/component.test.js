@@ -37,6 +37,10 @@ describe('Autoextra', () => {
       wrapper.vm.$nextTick(() => {
         const extraInput = wrapper.findAll('input').at(0);
         extraInput.setValue('bar');
+        wrapper.vm.$nextTick(() => {
+          expect(wrapper.vm.$props.collection.length).toEqual(1);
+          expect(wrapper.vm.$props.collection[0]).toEqual({ name: 'bar' });
+        });
         done();
       });
     });
